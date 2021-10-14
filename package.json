@@ -1,0 +1,14 @@
+{
+  "name": "project_mexflix",
+  "version": "1.0.0",
+  "description": "Movie cathalogue to find the best action movies of the recient times.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "markdown-table": "^3.0.1"
+  }
+}
