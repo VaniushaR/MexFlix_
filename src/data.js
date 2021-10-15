@@ -48,7 +48,7 @@ const renderingSelection = (movie) => {
 
 //bring movies for special selections
 const getSpecialSelection = (titleToSearch) => {
-      fetch("http://www.omdbapi.com/?t="+ `${titleToSearch}` +"&apikey=c05a093b")
+      fetch("https://www.omdbapi.com/?t="+ `${titleToSearch}` +"&apikey=c05a093b")
       .then( (response) => response.json())
       .then((data) => renderingSelection(data))
       .catch((error) => console.log(error))
