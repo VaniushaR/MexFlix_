@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Mexflix</title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+      <header>
+            <img  class="logo" src="https://camo.githubusercontent.com/5530efcf4ea170e776a328d39e5d29156ad1bf0ef44206b3fe225a51fa0aa6e1/68747470733a2f2f666f6e746d656d652e636f6d2f7065726d616c696e6b2f3231313030382f61626365326136333937616437376538383536306437613232643562633236342e706e67">
+      </header>
+            <ul class="nav justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#pre-selection">Selección para ti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Searcher">Buscador</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="#Mexflix">Acerca de Mexflix</a>
+                      </li>
+                  
+                </ul>
+       <main>
+             <!--starts the header area with the searcher -->
+            <aside id="searcher">
+                  <h2>Buscador</h2>
+                  <div class="input-group mb-3">
+                        <input id="input-search" type="text" class="form-control" placeholder="Título de película" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+                  </div>
+                  <hr>
+                  <section hidden id="search-results" > 
+                        <article>
+                              <div class="card" style="width: 18rem;">
+                                    <img src="" id="movie-poster" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title" id="movie-title"></h5>
+                                      <p class="card-text" id="movie-year"></p>
+                                    </div>
+                                  </div>
+                        </article>
+                  </section>
+            </aside>
+            <!-- Starts the movies selection area -->
+            
+                  <section id="movie-cards">
+                        <article>
+                              <div class="card" style="width: 18rem;">
+                                    <img src="" id="movie-poster-selected" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                      <h5 class="card-title" id="movie-title-selected"></h5>
+                                      <p class="card-text" id="movie-year-selected"></p>
+                                    </div>
+                              </div>
+                        </article>
+                  </section>
+            
+       </main>
+       <!-- footer -->
+       <footer id="Mexflix">
+             Mexflix 2021 Vania Ramírez 
+       </footer>
+            <script src="index.js" type="module"></script>
+      </body>
+</html>

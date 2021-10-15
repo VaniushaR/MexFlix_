@@ -1,0 +1,54 @@
+
+.logo {
+      width: auto;
+      height: auto;
+      max-width: 10em;
+      max-height: 5em;
+      padding-left: 2em;
+      padding-top: 2em;
+
+}
+h2 {
+      color:white;
+}
+
+main {
+      background-color: black;
+      padding: 2em;
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 0.5fr 3fr;
+      column-gap: 2em;
+      row-gap: 1em;
+      grid-template-areas: 
+      "searcher searcher searcher searcher"
+      "movie-cards movie-cards movie-cards movie-cards"
+      
+}
+footer {
+      background-color: paleturquoise;
+}
+/* Inside Main grid */
+aside {
+      grid-area:searcher;
+      background-color: rgba(175, 3, 3, 0.747);
+      padding: 3em;
+}
+/* Cards styles */
+#movie-cards {
+      grid-area: movie-cards;
+      display: flex;
+      flex-wrap: wrap;
+      background-color: aqua;
+      justify-content: center;
+      row-gap: 1em;
+      column-gap: 1em;
+      width: auto;
+      padding: 1em;
+}
+
+.movie-card {
+      width: auto;
+      height: min-content;
+      padding: 1em;
+}
